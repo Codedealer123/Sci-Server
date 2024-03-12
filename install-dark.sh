@@ -1,3 +1,5 @@
+clear
+
 echo '┌───── •✧✧• ─────┐
  -SCI-SERVER INSTALLER- 
 └───── •✧✧• ─────┘'
