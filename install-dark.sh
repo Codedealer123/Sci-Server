@@ -56,6 +56,10 @@ Installing MariaDB'
 
 apt install mariadb -y
 
+echo 'Securing MySQL installation be aware because it will ask you questions'
+
+sudo mysql_secure_installation
+
 
 echo '┌───── •✧✧• ─────┐
  -INSTALLING NVM- 
