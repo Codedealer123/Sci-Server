@@ -26,7 +26,36 @@ echo '┌───── •✧✧• ─────┐
  -INSTALLING PACKAGES- 
 └───── •✧✧• ─────┘'
 
-apt install apache2 openjdk-17-jdk tomcat10 tomcat10-docs webalizer php8.2 php-mysql -y
+echo '
+Installing apache'
+
+apt install apache2 tomcat10-docs webalizer php8.2 php-mysql -y
+
+echo '
+Installing java 17'
+
+apt install openjdk-17-jdk -y
+
+echo '
+Installing tomcat'
+
+apt install tomcat10 tomcat10-docs -y
+
+echo '
+Installing Webalizer'
+
+apt install webalizer
+
+echo '
+Installing php'
+
+apt install php8.2 php-mysql -y
+
+echo '
+Installing MariaDB'
+
+apt install mariadb -y
+
 
 echo '┌───── •✧✧• ─────┐
  -INSTALLING NVM- 
@@ -36,3 +65,17 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm install node
+
+echo '┌───── •✧✧• ─────┐
+ -INSTALLING PHPMYADMIN- 
+└───── •✧✧• ─────┘'
+
+echo 'Be aware because it will ask you questions'
+
+apt install phpmyadmin -y
+
+echo '┌───── •✧✧• ─────┐
+ -INSTALLING Sci-Server- 
+└───── •✧✧• ─────┘'
