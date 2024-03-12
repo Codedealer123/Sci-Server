@@ -80,6 +80,17 @@ echo 'Be aware because it will ask you questions'
 
 apt install phpmyadmin -y
 
+wget -O apache2.conf https://raw.githubusercontent.com/Codedealer123/Sci-Server/main/apache2.conf
+
+sudo rm /etc/apache2/apache2.conf -y
+
+sudo mv apache2.conf /etc/apache2/
+
+sudo service apache2 restart
+
+sudo ln -s /usr/share/phpmyadmin /var/www/html
+
 echo '┌───── •✧✧• ─────┐
  -INSTALLING Sci-Server- 
 └───── •✧✧• ─────┘'
+
