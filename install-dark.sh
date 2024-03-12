@@ -29,7 +29,7 @@ echo '┌───── •✧✧• ─────┐
 echo '
 Installing apache'
 
-apt install apache2 tomcat10-docs webalizer php8.2 php-mysql -y
+apt install apache2 -y
 
 echo '
 Installing java 17'
@@ -54,7 +54,7 @@ apt install php8.2 php-mysql -y
 echo '
 Installing MariaDB'
 
-apt install mariadb -y
+apt install mariadb-server -y
 
 echo 'Securing MySQL installation be aware because it will ask you questions'
 
