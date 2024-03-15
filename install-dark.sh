@@ -1,5 +1,4 @@
-echo 'A'
-clear
+#!/bin/bash
 
 echo '┌───── •✧✧• ─────┐
  -SCI-SERVER INSTALLER- 
@@ -25,6 +24,8 @@ echo '┌───── •✧✧• ─────┐
 
 apt install libfuse2 -y
 
+apt install trash-cli -y
+
 echo '┌───── •✧✧• ─────┐
  -INSTALLING PACKAGES- 
 └───── •✧✧• ─────┘'
@@ -47,17 +48,17 @@ apt install tomcat10 tomcat10-docs -y
 echo '
 Installing Webalizer'
 
-apt install webalizer
+apt install webalizer -y
 
 echo '
 Installing php'
 
-apt install php8.2 php-mysql -y
+apt install php8.2 -y
 
 echo '
 Installing MariaDB'
 
-apt install mariadb-server -y
+apt install php-mysql mariadb-server -y
 
 echo 'Securing MySQL installation be aware because it will ask you questions'
 
